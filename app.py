@@ -47,7 +47,7 @@ def load_sample_images(sample_images_dir):
     return sample_images
 
 # Streamlit app
-st.title("Brain Tumor Classification")
+st.title("Brain Tumour Detection ~ DSATM ~ ISE")
 
 
 # Display sample images section
@@ -66,7 +66,7 @@ cols = st.columns(num_cols)
 for i, (sample_image_file, sample_image) in enumerate(sample_images):
     col_idx = i % num_cols
     with cols[col_idx]:
-        st.image(sample_image, caption=f"Sample {i+1}", use_column_width=True)
+        st.image(sample_image, caption=f"Sample {i+1}", use_container_width=True)
 
 
 st.write("Upload an image below to classify it.")
